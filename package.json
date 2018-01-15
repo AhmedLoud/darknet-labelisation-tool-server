@@ -1,0 +1,23 @@
+{
+  "name": "server-side",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhmedLoud/darknet-labelisation-tool-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AhmedLoud/darknet-labelisation-tool-server/issues"
+  },
+  "homepage": "https://github.com/AhmedLoud/darknet-labelisation-tool-server#readme",
+  "devDependencies": {
+    "@types/node": "^9.3.0"
+  }
+}
