@@ -1,6 +1,18 @@
-import http = require('http');
+import express = require('express');
+let app = express();
 
-http.createServer((request, response) => {
-  response.write('Hello from Node.js!');
-  response.end();
-}).listen(3000);
+app.get('/api/sayhello/:name', (request, response) => {
+  let name = request.params.name;
+
+  if (!isNaN(name)) {
+    response
+      .status(400)
+      .send('No string as name');
+  } else {
+    response.json({
+      "message": name
+    });
+  }
+});
+
+app.listen(3000);
